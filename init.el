@@ -9,3 +9,7 @@
 (add-to-list 'load-path (relative-path "init"))
 
 (require 'init-el-get)
+(require 'init-config)
+
+;; Load the main config file which does everything else
+(load (relative-path "config/config-main"))
